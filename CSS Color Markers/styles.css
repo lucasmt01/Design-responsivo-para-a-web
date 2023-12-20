@@ -1,0 +1,115 @@
+h1 {
+    text-align: center;
+  }
+  
+  .containerPrimary {
+    background-color: rgb(255, 255, 255);
+    padding: 30px 0;
+    float: left; /* Adiciona um float left para o container primário */
+    width: 50%; /* Define a largura como 50% para ambos os containers */
+    box-sizing: border-box; /* Garante que a largura inclua preenchimento e borda */
+  }
+  
+  .containerSecondary {
+    background-color: rgb(255, 255, 255);
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: -30px; /* Ajuste para evitar espaçamento extra entre os containers */
+    float: right;
+    width: 50%;
+    box-sizing: border-box;
+  }
+  
+  .marker {
+    width: 200px;
+    height: 25px;
+    margin: 10px auto;
+  }
+  
+  .cap {
+    width: 60px;
+    height: 25px;
+  }
+  
+  .sleeve {
+    width: 110px;
+    height: 25px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-left: 10px double rgba(0, 0, 0, 0.75);
+  }
+  
+  .cap, .sleeve {
+    display: inline-block;
+  }
+  
+  .red {
+    background: linear-gradient(rgb(122, 74, 14), rgb(245, 62, 113), rgb(162, 27, 27));
+    box-shadow: 0 0 20px 0 rgba(83, 14, 14, 0.8);
+  }
+  
+  .blue {
+    background: linear-gradient(hsl(186, 76%, 16%), hsl(223, 90%, 60%), hsl(240, 56%, 42%));
+    box-shadow: 0 0 20px 0 blue;
+  }
+
+  .yellow {
+    background: linear-gradient(rgb(255, 255, 0), rgb(245, 218, 40), rgb(235, 189, 0));
+    box-shadow: 0 0 20px 5px rgba(255, 215, 0, 0.8);
+}
+
+  .green {
+    background: linear-gradient(#55680D, #71F53E, #116C31);
+    box-shadow: 0 0 20px 0 #3B7E20CC;
+}
+
+  .orange {
+    background: linear-gradient(orange, darkorange, orangered);
+    box-shadow: 0 0 20px 0 rgba(255, 140, 0, 0.8);
+}
+
+  .purple {
+    background: linear-gradient(purple, darkorchid, mediumpurple);
+    box-shadow: 0 0 20px 0 rgba(128, 0, 128, 0.8);
+}
+
+  .roda {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  @media screen and (max-height: 430px) {
+    .roda {
+      display: none;
+    }
+  }  
+
+  .Lred {
+    text-align: center;
+    margin-bottom: 2px;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 300px; 
+    word-wrap: break-word;
+  }
+
+  .Lyellow,
+  .Lblue,
+  .Lgreen,
+  .Lorange,
+  .Lpurple
+   {
+    text-align: center;
+    margin-bottom: 2px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 300px; /* Defina a largura máxima desejada */
+    word-wrap: break-word;
+  }
+

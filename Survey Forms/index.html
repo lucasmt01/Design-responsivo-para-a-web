@@ -1,0 +1,50 @@
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <title>Survey Form</title>
+      <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+      <h1 id="title">Survey Form:</h1>
+      <p id="description">Help us improve! Answer our brief survey and influence our services/products. Your opinion matters!</p>
+      <form id="survey-form">
+        <fieldset>
+          <legend>Demographic Data:</legend>
+          <label for="name">Enter Your Name<input id="name" type="text"  placeholder="Ex: Lucas" required/></label>
+          <label for="email">Enter Your Email<input id="email" type="email" placeholder="Ex:user@example.com" required/></label>
+          <label for="number">Enter Your Age<input id="number" type="number" min="16" max="120" placeholder="Ex: 20"/></label>
+          <label>Gender:</label>
+          <select id="dropdown">
+            <option value="1">Male</option>
+            <option value="2">Female</option>
+            <option value="3">Non-binary</option>
+            <option value="4">Other</option>
+            <option value="5">Prefer not to say</option>
+          </select>
+        </fieldset>
+        <fieldset>
+            <legend>User Experience:</legend>
+            
+            <label>How do you rate the ease of use of our website/service?</label>
+            <label for="1"><input id="1" type="radio" name="usability" value="1" class="inline"/> Poor</label>
+            <label for="2"><input id="2" type="radio" name="usability" value="2"class="inline"/> Average</label>
+          
+            <label>How often do you use our product/service? </label>
+            <label for="A"><input id="A" type="radio" name="frequency" value="A" class="inline"/> Daily</label>
+            <label for="B"><input id="B" type="radio" name="frequency" value="B" class="inline"/> Weekly</label>
+          </fieldset>
+            <label id="titleSession">Open Feedback:</label>
+            <textarea placeholder="Additional comments"></textarea>
+            <label for="terms-and-conditions">
+              <input class="inline" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" /> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
+            </label>
+          <input id="submit" type="submit" value="Submit"/>
+      </form>
+      <footer class="roda">
+        <p>
+            <a href="https://github.com/lucasmt01/ResponsiveWebDesign" target="_blank">Visit our website</a>
+          </p>
+        <p>MOTA FORMS</p>
+      </footer>
+    </body>

@@ -1,4 +1,4 @@
-  <!DOCTYPE html>
+<!DOCTYPE html>
   <html lang="en">
     <head>
       <meta charset="UTF-8">
@@ -11,9 +11,9 @@
       <form id="survey-form">
         <fieldset>
           <legend>Demographic Data:</legend>
-          <label for="name">Enter Your Name<input id="name" type="text"  placeholder="Ex: Lucas" required/></label>
-          <label for="email">Enter Your Email<input id="email" type="email" placeholder="Ex:user@example.com" required/></label>
-          <label for="number">Enter Your Age<input id="number" type="number" min="16" max="120" placeholder="Ex: 20"/></label>
+          <label for="name" id="name-label">Enter Your Name<input id="name" type="text"  placeholder="Ex: Lucas" required/></label>
+          <label for="email" id="email-label">Enter Your Email<input id="email" type="email" placeholder="Ex:user@example.com" required/></label>
+          <label for="number" id="number-label">Enter Your Age<input id="number" type="number" min="16" max="120" placeholder="Ex: 20"/></label>
           <label>Gender:</label>
           <select id="dropdown">
             <option value="1">Male</option>
@@ -37,8 +37,12 @@
             <label id="titleSession">Open Feedback:</label>
             <textarea placeholder="Additional comments"></textarea>
             <label for="terms-and-conditions">
-              <input class="inline" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" /> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
+              <input class="inline" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" value="acceptTerms"/> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
             </label>
+                            <label>
+      <input type="checkbox" name="emailNotification" class="inline" value="email" />
+I want to receive notifications by email    </label>
+
           <input id="submit" type="submit" value="Submit"/>
       </form>
       <footer class="roda">

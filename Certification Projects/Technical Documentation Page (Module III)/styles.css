@@ -1,0 +1,91 @@
+#navbar {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    border-right: solid;
+    border-color: rgba(0, 22, 22, 0.4);
+}
+
+#navbar ul {
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#navbar a {
+    display: block;
+    padding: 10px 30px;
+    color: #4d4e53;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#main-doc {
+    position: absolute;
+    margin-left: 310px;
+    padding: 20px;
+    margin-bottom: 110px;
+}
+
+p {
+    margin: 15px;
+}
+
+header {
+    color: black;
+    font-size: 1.7em;
+}
+
+nav header {
+    margin: 10px;
+}
+
+code {
+    display: block;
+    background-color: #f7f7f7;
+    padding: 10px;
+    margin-left: 15px;
+    white-space: pre;
+}
+
+html {
+    min-width: 290px;
+    color: #4d4e53;
+    background-color: #eee;
+    font-family: 'Open Sans', Arial, sans-serif;
+    line-height: 1.5;
+}
+
+nav li {
+    color: #4d4e53;
+    border-top: 1px solid;
+    list-style: none;
+    position: relative;
+    width: 100%;
+}
+
+.rodapé {
+    width: 800px;
+    height: 90px;
+    background-color: white;
+    margin:auto;
+    text-align: center;
+    line-height: 20px;
+  }
+
+  @media screen and (max-width: 768px) {
+    #navbar {
+      display: none;
+    }
+  
+    #main-doc {
+      margin-left: 0;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+  
+    .rodapé {
+      width: 100%;
+    }
+  }

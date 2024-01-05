@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Python Documentation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <nav id="navbar">
+    <header>Python Documentation</header>
+    <ul>
+      <li>      
+          <a class="nav-link" href="#Introduction">Introduction</a>
+      </li>
+
+      <li>      
+          <a class="nav-link" href="#Prerequisites">Prerequisites</a>
+      </li>
+
+      <li>      
+          <a class="nav-link" href="#Python_vs._Other_Languages">Python vs. Other Languages</a>
+      </li>
+
+      <li>            
+          <a class="nav-link" href="#Hello_World">Hello World</a>
+      </li>
+
+      <li>      
+          <a class="nav-link" href="#Variables">Variables</a>
+      </li>
+
+      <li>      
+          <a class="nav-link" href="#Data_Types">Data Types</a>
+      </li>
+
+      <li>      
+          <a class="nav-link" href="#Control_Structures">Control Structures</a>
+      </li>
+
+      <li>       
+          <a class="nav-link" href="#Function_Declarations">Function Declarations</a>
+      </li>
+
+      <li>
+          <a class="nav-link" href="#Reference">Reference</a>
+      </li>
+    </ul>
+  </nav>
+
+    <main id="main-doc">
+    
+        <section class="main-section" id="Introduction">
+        <header>Introduction</header>
+        <p>Python is a versatile, high-level programming language known for its simplicity and readability. It is a dynamically typed language and excels in various domains, from web development to data analysis and artificial intelligence.<br>
+    Python comes with an extensive standard library that includes modules for data structures, mathematics, and system interaction. It offers core language elements such as operators, control structures, and statements.<br>
+    Core Python can be extended using additional modules and libraries to cater to various purposes, for instance:</p>
+        <ul>
+        <li>
+            <strong>Client-side Python</strong> extends the core language by providing modules to interact with web browsers, manage web content, and handle user events.
+        </li>
+        <li>
+            <strong>Server-side Python</strong> extends the language by supplying modules relevant to server-side operations, facilitating database interactions, managing server resources, and handling file operations
+        </li>
+        </ul>
+        </section>
+        <section class="main-section" id="Prerequisites">
+        <header>Prerequisites</header>
+        <p>Before diving into Python, it's beneficial to have the following foundational knowledge:</p>
+        <ul>
+            <li>A general understanding of programming concepts.</li>
+            <li>Familiarity with basic computer science principles.
+    </li>
+            <li>Some experience with other programming languages will be helpful, but not mandatory.</li>
+        </ul>
+        </section>
+        <section class="main-section" id="Python_vs._Other_Languages">
+        <header>Python vs. Other Languages</header>
+        <p>Python differs significantly from statically typed languages like C++ or Java. While Python shares some syntax similarities with these languages, it adopts a more dynamic approach.<br>
+    In contrast to languages like Java that rely on class-based inheritance, Python uses a prototype-based object model. This model allows for dynamic inheritance, enabling objects to vary their inherited properties.<br>
+    Python is known for its simplicity and readability. Unlike Java, it doesn't mandate declaring all variables or specifying variable types explicitly. It offers a more flexible and free-form syntax, allowing developers to focus on code logic rather than complex syntax.</p>
+        </section>
+        <section class="main-section" id="Hello_World">
+        <header>Hello World</header>
+    <p>To begin with Python, let's write a simple "Hello World" program:</p>
+
+        <code>def greet_me(your_name):
+            print("Hello, " + your_name)
+        
+        greet_me("World")</code>
+    <p>Run this code to see the output!</p>
+        </section>
+    <section class="main-section" id="Variables">
+        <header>Variables</header>
+        <p>Variables in Python have scope defined by their declaration:</p>
+        <ul>
+            <li>Variables declared outside any function are global and accessible throughout the entire script.</li>
+            <li>Variables declared within a function are local and confined to that function's scope.</li>
+        </ul>
+        <p>Here is an example:</p>
+            <code>x = 10  # This is a global variable
+    
+    def my_function():
+        y = 20  # This is a local variable
+        print(x)  # Accessing global variable inside the function
+        print(y)  # Accessing local variable inside the function
+    
+    my_function()</code>
+    </section>
+    
+    <section class="main-section" id="Data_Types">
+        <header>Data Types</header>
+        <p>Python supports various data types:</p>
+        <ul>
+            <li><strong>Numbers:</strong> Integers, floats, and complex numbers</li>
+            <li><strong>Strings:</strong> Sequences of characters</li>
+            <li><strong>Booleans:</strong> True or False values</li>
+            <li><strong>Lists:</strong> Ordered collections</li>
+            <li><strong>Tuples:</strong> Immutable ordered collections</li>
+            <li><strong>Dictionaries:</strong> Key-value pairs</li>
+            <li><strong>Sets:</strong> Unordered collections of unique elements</li>
+        </ul>
+        <p>Example:</p>
+            <code># Different data types in Python
+    my_integer = 42
+    my_float = 3.14
+    my_string = "Hello, Python!"
+    my_boolean = True
+    my_list = [1, 2, 3]
+    my_tuple = (4, 5, 6)
+    my_dictionary = {"key": "value"}
+    my_set = {7, 8, 9}</code>
+    </section>
+    
+    <section class="main-section" id="Control_Structures">
+        <header>Control Structures</header>
+        <p>Python provides control structures like:</p>
+        <ul>
+            <li><strong>If...else:</strong> Conditional execution</li>
+            <li><strong>For loop:</strong> Iterating over sequences</li>
+            <li><strong>While loop:</strong> Executing code while a condition is true</li>
+        </ul>
+        <p>Example:</p>
+            <code># If...else statement
+    x = 10
+    if x > 5:
+        print("x is greater than 5")
+    else:
+        print("x is less than or equal to 5")
+    
+    # For loop
+    for i in range(5):
+        print(i)
+    
+    # While loop
+    y = 0
+    while y < 5:
+        print(y)
+        y += 1</code>
+    </section>
+    
+    <section class="main-section" id="Function_Declarations">
+        <header>Function Declarations</header>
+        <p>Functions in Python are defined using the def keyword followed by the function's name, 
+        arguments, and code enclosed within curly braces.</p>
+            <code>def my_function(parameter):
+        print("This is a function with a parameter:", parameter)
+    
+    my_function("example")</code>
+    </section>
+
+    <section class="main-section" id="Reference">
+        <header>Reference</header>
+        <p>To explore more about Python, check the official documentation at 
+            <a target="_blank" href="https://docs.python.org/">docs.python.org</a>.
+        </p>
+    </section>
+    <footer class="rodapé">
+        <p>
+          <br><a href="https://github.com/lucasmt01/ResponsiveWebDesign" target="_blank">Visit my repository</a>
+        </p>
+        <p>Python Documentation</p>
+      </footer>
+  </main>
+</html>

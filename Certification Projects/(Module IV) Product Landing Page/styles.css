@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    min-width: 290px;
+    color: #4d4e53;
+    background-color: #eee;
+    font-family: 'Open Sans', Arial, sans-serif;
+    line-height: 1.5;
+  }
+  
+  #page-wrapper {
+    position: relative;
+    padding-top: 70px;
+  }
+  
+  #header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 75px;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #eee;
+  }
+  
+  .logo {
+    max-width: 70px;
+    display: flex;
+    position: relative;
+    left: 50px;
+    justify-content: center;
+  }
+  
+  .logo img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  #nav-bar ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: #333;
+    margin: 0 10px;
+  }
+  
+  .container {
+    max-width: 1000px;
+    margin: 20px auto 0;
+    padding: 0 20px;
+  }
+  
+  section {
+    border: 1px solid #eee;
+  }
+  
+  #hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    height: 200px;
+  }
+  
+  #hero input[type='email'] {
+    max-width: 275px;
+    width: 100%;
+    padding: 5px;
+  }
+  
+  #hero input[type='submit'] {
+    max-width: 150px;
+    width: 100%;
+    height: 30px;
+    margin: 15px 0;
+    border: 0;
+    background-color: #f1c40f;
+    cursor: pointer;
+    font-weight: 900;
+    font-size: 1em;
+    text-transform: uppercase;
+  }
+  
+  #hero > h2 {
+    margin: 10px;
+  }
+  
+  #email {
+    margin-bottom: 10px;
+  }
+  
+  #how-it-works {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  #video {
+    max-width: 560px;
+    width: 100%;
+    height: 315px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .container {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  #features p:not(:last-of-type) {
+    padding-bottom: 50px;
+  }
+  
+  #pricing {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(100% / 3);
+    margin: 10px;
+    border: 1px solid #000;
+    border-radius: 3px;
+  }
+  
+  .product > .level {
+    background-color: #ddd;
+    color: black;
+    padding: 15px 0;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  
+  .product > h2 {
+    margin-top: 15px;
+  }
+  
+  .product > ol {
+    margin: 15px 0;
+  }
+  
+  .product > ol > li {
+    padding: 5px 0;
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  .product > button {
+    border: 0;
+    margin: 15px 0;
+    background-color: #f1c40f;
+    font-weight: 400;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+  
+  .product > button:hover {
+    background-color: orange;
+    transition: background-color 1s;
+  }
+  
+  .btn {
+    padding: 0 20px;
+    height: 40px;
+    font-size: 1em;
+    text-transform: uppercase;
+    background: transparent;
+  }
+  
+  .rodapé {
+    width: 800px;
+    height: 90px;
+    margin: auto;
+    text-align: center;
+    line-height: 20px;
+  }
+  
+  .rodapé a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .rodapé a:hover {
+    color: #555;
+  }
+  
+  @media screen and (max-width: 768px) {
+    #header {
+      padding: 0 10px;
+    }
+    .logo {
+      left: 10px;
+    }
+    .container {
+      padding: 0 10px;
+    }
+  }
